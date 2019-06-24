@@ -3,7 +3,7 @@
 
 #Download doctl from https://github.com/digitalocean/doctl/releases
 
-#create an API on Digital Ocean
+#create an API token on Digital Ocean (under Manage->API)
 
 #login with doctl
 doctl auth init
