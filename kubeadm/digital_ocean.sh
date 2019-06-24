@@ -3,6 +3,11 @@
 
 #Download doctl from https://github.com/digitalocean/doctl/releases
 
+#create an API on Digital Ocean
+
+#login with doctl
+doctl auth init
+
 #get sizes
 doctl compute size list
 
