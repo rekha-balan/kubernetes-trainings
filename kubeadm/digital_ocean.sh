@@ -1,9 +1,7 @@
 #digitalocean for lfs458 
 
 
-#kubeadm
-
-doctl projects create --name kubeadm --purpose kubeadm
+#Download doctl from https://github.com/digitalocean/doctl/releases
 
 #get sizes
 doctl compute size list
