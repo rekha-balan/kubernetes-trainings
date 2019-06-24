@@ -21,8 +21,8 @@ doctl compute image list --public | grep Ubuntu
 doctl compute ssh-key import  --public-key-file /Users/alessandro/.ssh/do.pub do
 
 #create droplets
-doctl compute droplet create --image ubuntu-18-04-x64 --enable-backups --ssh-keys 24877528 --region ams3 --size s-1vcpu-2gb master
+doctl compute droplet create --image ubuntu-18-04-x64 --enable-backups --ssh-keys 24877528 --region ams3 --size s-2vcpu-4gb master
 
-doctl compute droplet create --image ubuntu-18-04-x64 --enable-backups --ssh-keys 24877528 --region ams3 --size s-1vcpu-2gb node1
+doctl compute droplet create --image ubuntu-18-04-x64 --enable-backups --ssh-keys 24877528 --region ams3 --size s-4vcpu-8gb node1
 
-doctl compute droplet create --image ubuntu-18-04-x64 --enable-backups --ssh-keys 24877528 --region ams3 --size s-1vcpu-2gb node2
+doctl compute droplet create --image ubuntu-18-04-x64 --enable-backups --ssh-keys 24877528 --region ams3 --size s-4vcpu-8gb node2

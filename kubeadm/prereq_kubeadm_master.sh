@@ -7,7 +7,7 @@ systemctl start docker
 systemctl enable docker
 
 #kubectl
-apt-get update && apt-get install -y apt-transport-https curl
+apt-get update && apt-get install -y apt-transport-https curl jq
 curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
 cat <<EOF >/etc/apt/sources.list.d/kubernetes.list
 deb https://apt.kubernetes.io/ kubernetes-xenial main
@@ -23,5 +23,3 @@ ln -s /opt/kubectx/kubens /usr/local/bin/kubens
 cd
 wget https://raw.githubusercontent.com/ahmetb/kubectl-aliases/master/.kubectl_aliases
 echo "source ~/.kubectl_aliases" >> ~/.bashrc
-
-
