@@ -6,6 +6,12 @@ Initialise a cluster
 sudo kubeadm init  --apiserver-cert-extra-sans "master.cookingwithazure.com"
 ```
 
+If you missed the join command, you can create another one:
+
+```
+sudo kubeadm token create --print-join-command
+```
+
 Install Weavenet network plugin
 
 ```bash
