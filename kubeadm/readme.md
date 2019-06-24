@@ -1,6 +1,8 @@
-Install Kubeadm
+##Install Kubeadm
 
-Initialise a cluster
+Run the script [prereq_kubeadm_master.sh](https://raw.githubusercontent.com/ams0/kubernetes-trainings/master/kubeadm/prereq_kubeadm_master.sh).
+
+###Initialise a cluster
 
 ```bash
 sudo kubeadm init  --apiserver-cert-extra-sans "master.cookingwithazure.com"
@@ -10,6 +12,10 @@ If you missed the join command, you can create another one:
 
 ```
 sudo kubeadm token create --print-join-command
+```
+
+```
+kubectl describe nodes | grep Taints
 ```
 
 Install Weavenet network plugin
