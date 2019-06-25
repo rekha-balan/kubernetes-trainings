@@ -30,3 +30,10 @@ sudo chown $(id -u):$(id -g) $HOME/.kube/config
 sysctl net.bridge.bridge-nf-call-iptables=1
 kubectl apply -f "https://cloud.weave.works/k8s/net?k8s-version=$(kubectl version | base64 | tr -d '\n')"
 ```
+
+Start over
+
+```
+sudo kubeadm reset -f --skip-phases preflight
+sudo rm -R /var/lib/etcd
+```
