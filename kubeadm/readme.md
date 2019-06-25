@@ -5,7 +5,9 @@ Run the script [prereq_kubeadm_master.sh](https://raw.githubusercontent.com/ams0
 ###Initialise a cluster
 
 ```bash
-sudo kubeadm init  --apiserver-cert-extra-sans "master.cookingwithazure.com"
+sudo kubeadm init
+
+#if you want to access your cluster from outside, you can map the master' public IP to a DNS name and pass" `--apiserver-cert-extra-sans "name.domain.com"`
 ```
 
 If you missed the join command, you can create another one:
@@ -36,4 +38,5 @@ Start over
 ```
 sudo kubeadm reset -f --skip-phases preflight
 sudo rm -R /var/lib/etcd
+rm ~/.kube/config
 ```
