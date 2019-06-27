@@ -37,6 +37,9 @@
 [kube-ps1](https://github.com/jonmosco/kube-ps1)
 [kubedmc](https://github.com/Mimetis/Kubedmc)
 [Kubens and kubectx](https://github.com/ahmetb/kubectx/)
+[Krew](https://github.com/kubernetes-sigs/krew)
+[k9s](https://k9ss.io/)
+[ktail](https://github.com/atombender/ktail)
 
 ### Certifications
 
@@ -65,9 +68,13 @@
 [Gatekeeper and Open Policy Agent](https://github.com/open-policy-agent/gatekeeper)
 [Best practices for cluster security and upgrades in Azure Kubernetes Service (AKS)](https://docs.microsoft.com/en-us/azure/aks/operator-best-practices-cluster-security)
 [Dashboard view-only hack](https://gist.githubusercontent.com/ams0/677fe4fb1d523afef6e1cebb6d4a6035/raw/53dcfb0250f3aecab8c6644cbe55f3f97f17ce64/dashboard-viewonly.yaml)
+[“Asking for Forgiveness or Getting Permission”](https://blog.aquasec.com/kubernetes-rbac)
+
+### Network Policies
+
+[Kubernetes Network Policies](https://github.com/ahmetb/kubernetes-network-policy-recipes)
 [Network Policies](https://ahmet.im/blog/kubernetes-network-policy/)
 [Network Policies - II](https://octetz.com/posts/k8s-network-policy-apis)
-[“Asking for Forgiveness or Getting Permission”](https://blog.aquasec.com/kubernetes-rbac)
 
 ### #Failure stories
 
