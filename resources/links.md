@@ -56,6 +56,7 @@
 [Why choosing Operators](https://medium.com/@cloudark/why-to-write-kubernetes-operators-9b1e32a24814)
 [OperatorHub](https://operatorhub.io/)
 [An Operator in 15 minutes](https://blog.openshift.com/make-a-kubernetes-operator-in-15-minutes-with-helm/)
+[Pizza Operator](https://github.com/giantswarm/pizza-operator)
 
 ### #Security
 
@@ -82,7 +83,6 @@
 ```bash
 kubectl api-resources
 ```
-
 
 Install helm in RBAC cluster
 
